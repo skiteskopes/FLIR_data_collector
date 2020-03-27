@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['data_curation_1.2.py'],
-             pathex=['C:\\Users\\Gaming Pc\\Desktop\\datacurator'],
+             pathex=['A:\\common', 'C:\\Users\\Gaming Pc\\Desktop\\datacurator'],
              binaries=[],
              datas=[],
              hiddenimports=['numpy', 'imagecodecs._imagecodecs_lite'],

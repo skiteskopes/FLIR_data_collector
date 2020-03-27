@@ -24,8 +24,6 @@ imports:
  &#8226;   <a href="#'macholib.MachO'">'macholib.MachO'</a>
  &#8226;   <a href="#'macholib.dyld'">'macholib.dyld'</a>
  &#8226;   <a href="#'macholib.mach_o'">'macholib.mach_o'</a>
- &#8226;   <a href="#'nose.plugins'">'nose.plugins'</a>
- &#8226;   <a href="#'nose.util'">'nose.util'</a>
  &#8226;   <a href="#'numpy_distutils.command'">'numpy_distutils.command'</a>
  &#8226;   <a href="#'numpy_distutils.cpuinfo'">'numpy_distutils.cpuinfo'</a>
  &#8226;   <a href="#'numpy_distutils.fcompiler'">'numpy_distutils.fcompiler'</a>
@@ -38,6 +36,7 @@ imports:
  &#8226;   <a href="#'setuptools.extern.six'">'setuptools.extern.six'</a>
  &#8226;   <a href="#ConfigParser">ConfigParser</a>
  &#8226;   <a href="#Crypto">Crypto</a>
+ &#8226;   <a href="#IronPython">IronPython</a>
  &#8226;   <a href="#Numeric">Numeric</a>
  &#8226;   <a href="#PIL">PIL</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
@@ -193,6 +192,7 @@ imports:
  &#8226;   <a href="#calendar">calendar</a>
  &#8226;   <a href="#cffi">cffi</a>
  &#8226;   <a href="#cgi">cgi</a>
+ &#8226;   <a href="#clr">clr</a>
  &#8226;   <a href="#cmd">cmd</a>
  &#8226;   <a href="#code">code</a>
  &#8226;   <a href="#codecs">codecs</a>
@@ -203,6 +203,7 @@ imports:
  &#8226;   <a href="#collections.Set">collections.Set</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#commands">commands</a>
+ &#8226;   <a href="#compiler">compiler</a>
  &#8226;   <a href="#concurrent">concurrent</a>
  &#8226;   <a href="#concurrent.futures">concurrent.futures</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
@@ -210,6 +211,7 @@ imports:
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#configparser">configparser</a>
  &#8226;   <a href="#configparser">configparser</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#contextvars">contextvars</a>
  &#8226;   <a href="#copy">copy</a>
@@ -489,6 +491,8 @@ imports:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lz4">lz4</a>
  &#8226;   <a href="#lzf">lzf</a>
  &#8226;   <a href="#lzma">lzma</a>
@@ -501,9 +505,11 @@ imports:
  &#8226;   <a href="#multiprocessing">multiprocessing</a>
  &#8226;   <a href="#multiprocessing.AuthenticationError">multiprocessing.AuthenticationError</a>
  &#8226;   <a href="#multiprocessing.BufferTooShort">multiprocessing.BufferTooShort</a>
+ &#8226;   <a href="#multiprocessing.Manager">multiprocessing.Manager</a>
  &#8226;   <a href="#multiprocessing.TimeoutError">multiprocessing.TimeoutError</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
+ &#8226;   <a href="#multiprocessing.current_process">multiprocessing.current_process</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
@@ -527,7 +533,35 @@ imports:
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#netrc">netrc</a>
+ &#8226;   <a href="#new">new</a>
  &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+ &#8226;   <a href="#nose.ext">nose.ext</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.builtin">nose.plugins.builtin</a>
+ &#8226;   <a href="#nose.plugins.deprecated">nose.plugins.deprecated</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
+ &#8226;   <a href="#nose.tools.trivial">nose.tools.trivial</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#nt">nt</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#ntpath">ntpath</a>
@@ -791,6 +825,7 @@ imports:
  &#8226;   <a href="#scipy.version">scipy.version</a>
  &#8226;   <a href="#select">select</a>
  &#8226;   <a href="#selectors">selectors</a>
+ &#8226;   <a href="#sets">sets</a>
  &#8226;   <a href="#setuptools">setuptools</a>
  &#8226;   <a href="#setuptools._deprecation_warning">setuptools._deprecation_warning</a>
  &#8226;   <a href="#setuptools.archive_util">setuptools.archive_util</a>
@@ -834,6 +869,7 @@ imports:
  &#8226;   <a href="#shutil">shutil</a>
  &#8226;   <a href="#signal">signal</a>
  &#8226;   <a href="#site">site</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
@@ -876,6 +912,7 @@ imports:
  &#8226;   <a href="#unittest.signals">unittest.signals</a>
  &#8226;   <a href="#unittest.suite">unittest.suite</a>
  &#8226;   <a href="#unittest.util">unittest.util</a>
+ &#8226;   <a href="#unittest2">unittest2</a>
  &#8226;   <a href="#urllib">urllib</a>
  &#8226;   <a href="#urllib.error">urllib.error</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
@@ -905,8 +942,11 @@ imports:
  &#8226;   <a href="#win32ctypes.pywin32.win32api">win32ctypes.pywin32.win32api</a>
  &#8226;   <a href="#win32ctypes.pywin32.win32cred">win32ctypes.pywin32.win32cred</a>
  &#8226;   <a href="#win32ctypes.version">win32ctypes.version</a>
+ &#8226;   <a href="#win32evtlog">win32evtlog</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
  &#8226;   <a href="#win32pdh">win32pdh</a>
  &#8226;   <a href="#wincertstore">wincertstore</a>
+ &#8226;   <a href="#winerror">winerror</a>
  &#8226;   <a href="#winreg">winreg</a>
  &#8226;   <a href="#xml">xml</a>
  &#8226;   <a href="#xml.dom">xml.dom</a>
@@ -1159,31 +1199,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="'nose.plugins'"></a>
-  <a target="code" href="" type="text/plain"><tt>'nose.plugins'</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
- &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
- &#8226;   <a href="#numpy.testing._private.nosetester">numpy.testing._private.nosetester</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="'nose.util'"></a>
-  <a target="code" href="" type="text/plain"><tt>'nose.util'</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
- &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="'numpy_distutils.command'"></a>
   <a target="code" href="" type="text/plain"><tt>'numpy_distutils.command'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -1342,6 +1357,34 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="'six.moves.urllib'"></a>
+  <a target="code" href="" type="text/plain"><tt>'six.moves.urllib'</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#'six.moves.urllib'">'six.moves.urllib'</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="'six.moves.urllib'"></a>
+  <a target="code" href="" type="text/plain"><tt>'six.moves.urllib'</tt></a>
+<span class="moduletype">AliasNode</span>  <div class="import">
+imports:
+    <a href="#'six.moves.urllib'">'six.moves.urllib'</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#graphqlclient.client">graphqlclient.client</a>
+ &#8226;   <a href="#six.moves">six.moves</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="'win32com.gen_py'"></a>
   <a target="code" href="" type="text/plain"><tt>'win32com.gen_py'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -1373,6 +1416,18 @@ imported by:
 imported by:
     <a href="#PyInstaller.building.makespec">PyInstaller.building.makespec</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="IronPython"></a>
+  <a target="code" href="" type="text/plain"><tt>IronPython</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
 
   </div>
 
@@ -4670,6 +4725,7 @@ imported by:
  &#8226;   <a href="#pkg_resources._vendor.six">pkg_resources._vendor.six</a>
  &#8226;   <a href="#scipy._lib.six">scipy._lib.six</a>
  &#8226;   <a href="#setuptools._vendor.six">setuptools._vendor.six</a>
+ &#8226;   <a href="#six">six</a>
 
   </div>
 
@@ -4747,6 +4803,7 @@ imported by:
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#imagecodecs._utils">imagecodecs._utils</a>
  &#8226;   <a href="#imagecodecs.imagecodecs">imagecodecs.imagecodecs</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy._globals">numpy._globals</a>
  &#8226;   <a href="#numpy._import_tools">numpy._import_tools</a>
@@ -4912,6 +4969,7 @@ imported by:
  &#8226;   <a href="#setuptools.config">setuptools.config</a>
  &#8226;   <a href="#setuptools.glibc">setuptools.glibc</a>
  &#8226;   <a href="#setuptools.pep425tags">setuptools.pep425tags</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
  &#8226;   <a href="#win32ctypes.core">win32ctypes.core</a>
  &#8226;   <a href="#win32ctypes.pywin32">win32ctypes.pywin32</a>
@@ -6145,6 +6203,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.building.makespec">PyInstaller.building.makespec</a>
  &#8226;   <a href="#calendar">calendar</a>
  &#8226;   <a href="#code">code</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#doctest">doctest</a>
@@ -6254,7 +6313,9 @@ imported by:
  &#8226;   <a href="#email.encoders">email.encoders</a>
  &#8226;   <a href="#encodings.base64_codec">encodings.base64_codec</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#setuptools.package_index">setuptools.package_index</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
@@ -6355,6 +6416,7 @@ imported by:
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#lzma">lzma</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy.core.numeric">numpy.core.numeric</a>
  &#8226;   <a href="#numpy.core.numerictypes">numpy.core.numerictypes</a>
@@ -6526,6 +6588,18 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#distutils.config">distutils.config</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="clr"></a>
+  <a target="code" href="" type="text/plain"><tt>clr</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
 
   </div>
 
@@ -6786,6 +6860,7 @@ imported by:
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
  &#8226;   <a href="#configparser">configparser</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#difflib">difflib</a>
@@ -6801,6 +6876,10 @@ imported by:
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
  &#8226;   <a href="#numpy.core.numeric">numpy.core.numeric</a>
  &#8226;   <a href="#numpy.fft.helper">numpy.fft.helper</a>
  &#8226;   <a href="#numpy.lib.function_base">numpy.lib.function_base</a>
@@ -7005,6 +7084,18 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="compiler"></a>
+  <a target="code" href="" type="text/plain"><tt>compiler</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="concurrent"></a>
   <a target="code" href="///C:/python/python37/lib/concurrent/__init__.py" type="text/plain"><tt>concurrent</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
@@ -7139,6 +7230,8 @@ imported by:
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#distutils.config">distutils.config</a>
  &#8226;   <a href="#distutils.dist">distutils.dist</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
  &#8226;   <a href="#numpy.distutils.npy_pkg_config">numpy.distutils.npy_pkg_config</a>
  &#8226;   <a href="#numpy.distutils.system_info">numpy.distutils.system_info</a>
 
@@ -7162,6 +7255,52 @@ imported by:
  &#8226;   <a href="#setuptools.command.setopt">setuptools.command.setopt</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
  &#8226;   <a href="#setuptools.package_index">setuptools.package_index</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="conservator_operations"></a>
+  <a target="code" href="///A:/common/conservator_operations.py" type="text/plain"><tt>conservator_operations</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#graphql_operations">graphql_operations</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#conservator_upload">conservator_upload</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="conservator_upload"></a>
+  <a target="code" href="///C:/Users/Gaming%20Pc/Desktop/datacurator/conservator_upload.py" type="text/plain"><tt>conservator_upload</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#argparse">argparse</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#conservator_operations">conservator_operations</a>
+ &#8226;   <a href="#enum">enum</a>
+ &#8226;   <a href="#graphql_operations">graphql_operations</a>
+ &#8226;   <a href="#graphqlclient">graphqlclient</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
+ &#8226;   <a href="#time">time</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
 
   </div>
 
@@ -7247,6 +7386,7 @@ imported by:
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#numpy.distutils.ccompiler">numpy.distutils.ccompiler</a>
  &#8226;   <a href="#numpy.distutils.command.build_src">numpy.distutils.command.build_src</a>
  &#8226;   <a href="#numpy.distutils.misc_util">numpy.distutils.misc_util</a>
@@ -7260,6 +7400,7 @@ imported by:
  &#8226;   <a href="#piexif._dump">piexif._dump</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing">pkg_resources._vendor.pyparsing</a>
  &#8226;   <a href="#setuptools._vendor.pyparsing">setuptools._vendor.pyparsing</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
@@ -7597,6 +7738,7 @@ imported by:
  &#8226;   <a href="#pkg_resources._vendor.pyparsing">pkg_resources._vendor.pyparsing</a>
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#setuptools._vendor.pyparsing">setuptools._vendor.pyparsing</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
  &#8226;   <a href="#win32com.client.build">win32com.client.build</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
@@ -7642,6 +7784,7 @@ imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#difflib">difflib</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
  &#8226;   <a href="#unittest.case">unittest.case</a>
 
@@ -9042,6 +9185,11 @@ imported by:
  &#8226;   <a href="#difflib">difflib</a>
  &#8226;   <a href="#heapq">heapq</a>
  &#8226;   <a href="#imagecodecs.imagecodecs">imagecodecs.imagecodecs</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
  &#8226;   <a href="#numpy.testing._private.nosetester">numpy.testing._private.nosetester</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
@@ -9238,6 +9386,7 @@ imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#email.charset">email.charset</a>
  &#8226;   <a href="#email.header">email.header</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -9378,6 +9527,7 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -9475,7 +9625,9 @@ imported by:
  &#8226;   <a href="#email.feedparser">email.feedparser</a>
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#pydoc">pydoc</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -9576,6 +9728,8 @@ imported by:
  &#8226;   <a href="#email.message">email.message</a>
  &#8226;   <a href="#email.policy">email.policy</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -12161,7 +12315,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+    <a href="#conservator_upload">conservator_upload</a>
+ &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#http">http</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#plistlib">plistlib</a>
@@ -12192,6 +12347,7 @@ imported by:
  &#8226;   <a href="#ffmpy">ffmpy</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#pathlib">pathlib</a>
@@ -12392,6 +12548,7 @@ imported by:
  &#8226;   <a href="#setuptools.sandbox">setuptools.sandbox</a>
  &#8226;   <a href="#setuptools.ssl_support">setuptools.ssl_support</a>
  &#8226;   <a href="#signal">signal</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
  &#8226;   <a href="#types">types</a>
@@ -12584,6 +12741,61 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="graphql_operations"></a>
+  <a target="code" href="///A:/common/graphql_operations.py" type="text/plain"><tt>graphql_operations</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#json">json</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#urllib.error">urllib.error</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#conservator_operations">conservator_operations</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="graphqlclient"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/graphqlclient/__init__.py" type="text/plain"><tt>graphqlclient</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#graphqlclient.client">graphqlclient.client</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#conservator_upload">conservator_upload</a>
+ &#8226;   <a href="#graphqlclient.client">graphqlclient.client</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="graphqlclient.client"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/graphqlclient/client.py" type="text/plain"><tt>graphqlclient.client</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#'six.moves.urllib'">'six.moves.urllib'</a>
+ &#8226;   <a href="#graphqlclient">graphqlclient</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#six.moves">six.moves</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#graphqlclient">graphqlclient</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="grp"></a>
   <a target="code" href="" type="text/plain"><tt>grp</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
@@ -12694,6 +12906,7 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
 
   </div>
 
@@ -12818,6 +13031,7 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
@@ -13084,6 +13298,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.lib.modulegraph.util">PyInstaller.lib.modulegraph.util</a>
  &#8226;   <a href="#PyInstaller.loader.pyimod02_archive">PyInstaller.loader.pyimod02_archive</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
  &#8226;   <a href="#numpy.compat.py3k">numpy.compat.py3k</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
  &#8226;   <a href="#pywintypes">pywintypes</a>
@@ -13310,6 +13525,13 @@ imported by:
  &#8226;   <a href="#bdb">bdb</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.distutils.system_info">numpy.distutils.system_info</a>
  &#8226;   <a href="#numpy.lib.utils">numpy.lib.utils</a>
  &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
@@ -13387,11 +13609,16 @@ imported by:
  &#8226;   <a href="#lib2to3.pytree">lib2to3.pytree</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
  &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
  &#8226;   <a href="#numpy.compat.py3k">numpy.compat.py3k</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
  &#8226;   <a href="#numpy.lib.format">numpy.lib.format</a>
@@ -13419,6 +13646,8 @@ imported by:
  &#8226;   <a href="#setuptools.config">setuptools.config</a>
  &#8226;   <a href="#setuptools.dist">setuptools.dist</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#six">six</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -13464,6 +13693,8 @@ imported by:
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.core.einsumfunc">numpy.core.einsumfunc</a>
  &#8226;   <a href="#numpy.core.numeric">numpy.core.numeric</a>
  &#8226;   <a href="#numpy.lib.npyio">numpy.lib.npyio</a>
@@ -13487,6 +13718,7 @@ imported by:
  &#8226;   <a href="#setuptools.package_index">setuptools.package_index</a>
  &#8226;   <a href="#setuptools.sandbox">setuptools.sandbox</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#tokenize">tokenize</a>
  &#8226;   <a href="#traceback">traceback</a>
@@ -13522,11 +13754,16 @@ imports:
   <div class="import">
 imported by:
     <a href="#PyInstaller.utils.hooks.qt">PyInstaller.utils.hooks.qt</a>
+ &#8226;   <a href="#conservator_operations">conservator_operations</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#distutils._msvccompiler">distutils._msvccompiler</a>
+ &#8226;   <a href="#graphql_operations">graphql_operations</a>
+ &#8226;   <a href="#graphqlclient.client">graphqlclient.client</a>
  &#8226;   <a href="#json.decoder">json.decoder</a>
  &#8226;   <a href="#json.encoder">json.encoder</a>
  &#8226;   <a href="#json.scanner">json.scanner</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
 
   </div>
@@ -14045,6 +14282,7 @@ imported by:
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
  &#8226;   <a href="#traceback">traceback</a>
@@ -14118,6 +14356,8 @@ imported by:
  &#8226;   <a href="#PIL.PyAccess">PIL.PyAccess</a>
  &#8226;   <a href="#PyInstaller.log">PyInstaller.log</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
+ &#8226;   <a href="#conservator_operations">conservator_operations</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
@@ -14125,9 +14365,88 @@ imported by:
  &#8226;   <a href="#lib2to3.btm_matcher">lib2to3.btm_matcher</a>
  &#8226;   <a href="#lib2to3.pgen2.driver">lib2to3.pgen2.driver</a>
  &#8226;   <a href="#lib2to3.refactor">lib2to3.refactor</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
  &#8226;   <a href="#unittest.case">unittest.case</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="logging.config"></a>
+  <a target="code" href="///C:/python/python37/lib/logging/config.py" type="text/plain"><tt>logging.config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#configparser">configparser</a>
+ &#8226;   <a href="#errno">errno</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#json">json</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#select">select</a>
+ &#8226;   <a href="#socketserver">socketserver</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#traceback">traceback</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="logging.handlers"></a>
+  <a target="code" href="///C:/python/python37/lib/logging/handlers.py" type="text/plain"><tt>logging.handlers</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#http.client">http.client</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#threading">threading</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#urllib.parse">urllib.parse</a>
+ &#8226;   <a href="#win32evtlog">win32evtlog</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
 
   </div>
 
@@ -14320,8 +14639,10 @@ imports:
     <a href="#multiprocessing">multiprocessing</a>
  &#8226;   <a href="#multiprocessing.AuthenticationError">multiprocessing.AuthenticationError</a>
  &#8226;   <a href="#multiprocessing.BufferTooShort">multiprocessing.BufferTooShort</a>
+ &#8226;   <a href="#multiprocessing.Manager">multiprocessing.Manager</a>
  &#8226;   <a href="#multiprocessing.TimeoutError">multiprocessing.TimeoutError</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
+ &#8226;   <a href="#multiprocessing.current_process">multiprocessing.current_process</a>
  &#8226;   <a href="#multiprocessing.get_context">multiprocessing.get_context</a>
  &#8226;   <a href="#multiprocessing.get_start_method">multiprocessing.get_start_method</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
@@ -14361,6 +14682,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
  &#8226;   <a href="#numpy.distutils.misc_util">numpy.distutils.misc_util</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
@@ -14390,6 +14712,19 @@ imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#multiprocessing">multiprocessing</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="multiprocessing.Manager"></a>
+  <a target="code" href="" type="text/plain"><tt>multiprocessing.Manager</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#multiprocessing">multiprocessing</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
 
   </div>
 
@@ -14494,6 +14829,19 @@ imported by:
  &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="multiprocessing.current_process"></a>
+  <a target="code" href="" type="text/plain"><tt>multiprocessing.current_process</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#multiprocessing">multiprocessing</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
 
   </div>
 
@@ -15127,14 +15475,756 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="nose"></a>
-  <a target="code" href="" type="text/plain"><tt>nose</tt></a>
+  <a name="new"></a>
+  <a target="code" href="" type="text/plain"><tt>new</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/__init__.py" type="text/plain"><tt>nose</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+ &#8226;   <a href="#nose.ext">nose.ext</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.testing._private.decorators">numpy.testing._private.decorators</a>
  &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.case"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/case.py" type="text/plain"><tt>nose.case</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.config"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/config.py" type="text/plain"><tt>nose.config</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#configparser">configparser</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#optparse">optparse</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.core"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/core.py" type="text/plain"><tt>nose.core</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#time">time</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.exc"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/exc.py" type="text/plain"><tt>nose.exc</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.plugins.deprecated">nose.plugins.deprecated</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.ext"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/ext/__init__.py" type="text/plain"><tt>nose.ext</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#nose">nose</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.ext.dtcompat"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/ext/dtcompat.py" type="text/plain"><tt>nose.ext.dtcompat</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#__future__">__future__</a>
+ &#8226;   <a href="#difflib">difflib</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#linecache">linecache</a>
+ &#8226;   <a href="#new">new</a>
+ &#8226;   <a href="#nose.ext">nose.ext</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pdb">pdb</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#tempfile">tempfile</a>
+ &#8226;   <a href="#traceback">traceback</a>
+ &#8226;   <a href="#unittest">unittest</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.failure"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/failure.py" type="text/plain"><tt>nose.failure</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#traceback">traceback</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.importer"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/importer.py" type="text/plain"><tt>nose.importer</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#imp">imp</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.loader"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/loader.py" type="text/plain"><tt>nose.loader</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/__init__.py" type="text/plain"><tt>nose.plugins</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.builtin">nose.plugins.builtin</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.builtin">nose.plugins.builtin</a>
+ &#8226;   <a href="#nose.plugins.deprecated">nose.plugins.deprecated</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+ &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
+ &#8226;   <a href="#numpy.testing._private.nosetester">numpy.testing._private.nosetester</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.base"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/base.py" type="text/plain"><tt>nose.plugins.base</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#optparse">optparse</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#textwrap">textwrap</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.builtin"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/builtin.py" type="text/plain"><tt>nose.plugins.builtin</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.plugins">nose.plugins</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#numpy.testing._private.nosetester">numpy.testing._private.nosetester</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.deprecated"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/deprecated.py" type="text/plain"><tt>nose.plugins.deprecated</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.doctests"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/doctests.py" type="text/plain"><tt>nose.plugins.doctests</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#builtins">builtins</a>
+ &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.errorclass"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/errorclass.py" type="text/plain"><tt>nose.plugins.errorclass</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.deprecated">nose.plugins.deprecated</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+ &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.manager"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/manager.py" type="text/plain"><tt>nose.plugins.manager</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#inspect">inspect</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.builtin">nose.plugins.builtin</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#optparse">optparse</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#pickle">pickle</a>
+ &#8226;   <a href="#pkg_resources">pkg_resources</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.plugintest"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/plugintest.py" type="text/plain"><tt>nose.plugins.plugintest</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#collections">collections</a>
+ &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#multiprocessing">multiprocessing</a>
+ &#8226;   <a href="#multiprocessing.Manager">multiprocessing.Manager</a>
+ &#8226;   <a href="#multiprocessing.current_process">multiprocessing.current_process</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#queue">queue</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.plugins.skip"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/plugins/skip.py" type="text/plain"><tt>nose.plugins.skip</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#unittest.case">unittest.case</a>
+ &#8226;   <a href="#unittest2">unittest2</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.exc">nose.exc</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.proxy"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/proxy.py" type="text/plain"><tt>nose.proxy</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.pyversion"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/pyversion.py" type="text/plain"><tt>nose.pyversion</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#compiler">compiler</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#new">new</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#traceback">traceback</a>
+ &#8226;   <a href="#types">types</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.result"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/result.py" type="text/plain"><tt>nose.result</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#unittest">unittest</a>
+ &#8226;   <a href="#unittest.runner">unittest.runner</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.selector"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/selector.py" type="text/plain"><tt>nose.selector</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.suite"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/suite.py" type="text/plain"><tt>nose.suite</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#IronPython">IronPython</a>
+ &#8226;   <a href="#clr">clr</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.proxy">nose.proxy</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.tools"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/tools/__init__.py" type="text/plain"><tt>nose.tools</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
+ &#8226;   <a href="#nose.tools.trivial">nose.tools.trivial</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
+ &#8226;   <a href="#nose.tools.trivial">nose.tools.trivial</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.tools.nontrivial"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/tools/nontrivial.py" type="text/plain"><tt>nose.tools.nontrivial</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.tools">nose.tools</a>
+ &#8226;   <a href="#pdb">pdb</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#time">time</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.tools.trivial"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/tools/trivial.py" type="text/plain"><tt>nose.tools.trivial</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#nose.tools">nose.tools</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="nose.util"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/nose/util.py" type="text/plain"><tt>nose.util</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#doctest">doctest</a>
+ &#8226;   <a href="#inspect">inspect</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.tools">nose.tools</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sets">sets</a>
+ &#8226;   <a href="#stat">stat</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+ &#8226;   <a href="#unittest">unittest</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#numpy.testing._private.noseclasses">numpy.testing._private.noseclasses</a>
 
   </div>
 
@@ -19755,12 +20845,15 @@ imported by:
   <a target="code" href="///C:/python/python37/lib/site-packages/numpy/testing/_private/noseclasses.py" type="text/plain"><tt>numpy.testing._private.noseclasses</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'nose.plugins'">'nose.plugins'</a>
- &#8226;   <a href="#'nose.util'">'nose.util'</a>
- &#8226;   <a href="#__future__">__future__</a>
+    <a href="#__future__">__future__</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#nose">nose</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.errorclass">nose.plugins.errorclass</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy.core._multiarray_tests">numpy.core._multiarray_tests</a>
  &#8226;   <a href="#numpy.testing._private">numpy.testing._private</a>
@@ -19785,9 +20878,10 @@ imported by:
   <a target="code" href="///C:/python/python37/lib/site-packages/numpy/testing/_private/nosetester.py" type="text/plain"><tt>numpy.testing._private.nosetester</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'nose.plugins'">'nose.plugins'</a>
- &#8226;   <a href="#__future__">__future__</a>
+    <a href="#__future__">__future__</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.plugins">nose.plugins</a>
+ &#8226;   <a href="#nose.plugins.builtin">nose.plugins.builtin</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy.compat">numpy.compat</a>
  &#8226;   <a href="#numpy.distutils">numpy.distutils</a>
@@ -20029,6 +21123,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.packaging.markers">setuptools._vendor.packaging.markers</a>
  &#8226;   <a href="#setuptools._vendor.six">setuptools._vendor.six</a>
  &#8226;   <a href="#setuptools.sandbox">setuptools.sandbox</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#win32com.client.gencache">win32com.client.gencache</a>
 
@@ -20050,6 +21145,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
  &#8226;   <a href="#numpy.distutils.npy_pkg_config">numpy.distutils.npy_pkg_config</a>
  &#8226;   <a href="#numpy.distutils.system_info">numpy.distutils.system_info</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
@@ -20214,6 +21312,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#configparser">configparser</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#ctypes">ctypes</a>
  &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.macholib.dyld">ctypes.macholib.dyld</a>
@@ -20274,6 +21373,7 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -20293,6 +21393,18 @@ imported by:
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#netrc">netrc</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#numpy.__config__">numpy.__config__</a>
@@ -20487,6 +21599,8 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing">pkg_resources._vendor.pyparsing</a>
  &#8226;   <a href="#setuptools._vendor.pyparsing">setuptools._vendor.pyparsing</a>
@@ -20552,7 +21666,9 @@ imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#lib2to3.pgen2.grammar">lib2to3.pgen2.grammar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
  &#8226;   <a href="#numpy.core">numpy.core</a>
  &#8226;   <a href="#numpy.core.numeric">numpy.core.numeric</a>
  &#8226;   <a href="#numpy.lib.format">numpy.lib.format</a>
@@ -20866,6 +21982,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#altgraph">altgraph</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
  &#8226;   <a href="#pkg_resources">pkg_resources</a>
  &#8226;   <a href="#pkg_resources._vendor">pkg_resources._vendor</a>
  &#8226;   <a href="#pkg_resources.extern">pkg_resources.extern</a>
@@ -21928,11 +23045,13 @@ imported by:
     <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
 
   </div>
 
@@ -22035,6 +23154,8 @@ imported by:
  &#8226;   <a href="#base64">base64</a>
  &#8226;   <a href="#cgi">cgi</a>
  &#8226;   <a href="#configparser">configparser</a>
+ &#8226;   <a href="#conservator_operations">conservator_operations</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.macholib.dylib">ctypes.macholib.dylib</a>
  &#8226;   <a href="#ctypes.macholib.framework">ctypes.macholib.framework</a>
@@ -22084,6 +23205,13 @@ imported by:
  &#8226;   <a href="#lib2to3.pgen2.literals">lib2to3.pgen2.literals</a>
  &#8226;   <a href="#lib2to3.pgen2.tokenize">lib2to3.pgen2.tokenize</a>
  &#8226;   <a href="#locale">locale</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.tools.trivial">nose.tools.trivial</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.core._internal">numpy.core._internal</a>
  &#8226;   <a href="#numpy.distutils.ccompiler">numpy.distutils.ccompiler</a>
  &#8226;   <a href="#numpy.distutils.command.build_src">numpy.distutils.command.build_src</a>
@@ -22147,6 +23275,7 @@ imported by:
  &#8226;   <a href="#setuptools.ssl_support">setuptools.ssl_support</a>
  &#8226;   <a href="#setuptools.wheel">setuptools.wheel</a>
  &#8226;   <a href="#shlex">shlex</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#string">string</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#tarfile">tarfile</a>
@@ -22879,6 +24008,7 @@ imported by:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -22908,6 +24038,18 @@ imported by:
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="sets"></a>
+  <a target="code" href="" type="text/plain"><tt>sets</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
 
   </div>
 
@@ -24513,6 +25655,77 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="six"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/six.py" type="text/plain"><tt>six</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#StringIO">StringIO</a>
+ &#8226;   <a href="#__future__">__future__</a>
+ &#8226;   <a href="#functools">functools</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#types">types</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#six.moves">six.moves</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="six.moves"></a>
+  <a target="code" href="" type="text/plain"><tt>six.moves</tt></a>
+<span class="moduletype">RuntimePackage</span>  <div class="import">
+imports:
+    <a href="#'six.moves.urllib'">'six.moves.urllib'</a>
+ &#8226;   <a href="#six">six</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#graphqlclient.client">graphqlclient.client</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="smtplib"></a>
+  <a target="code" href="///C:/python/python37/lib/smtplib.py" type="text/plain"><tt>smtplib</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#base64">base64</a>
+ &#8226;   <a href="#copy">copy</a>
+ &#8226;   <a href="#datetime">datetime</a>
+ &#8226;   <a href="#email.base64mime">email.base64mime</a>
+ &#8226;   <a href="#email.generator">email.generator</a>
+ &#8226;   <a href="#email.message">email.message</a>
+ &#8226;   <a href="#email.utils">email.utils</a>
+ &#8226;   <a href="#hmac">hmac</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#socket">socket</a>
+ &#8226;   <a href="#ssl">ssl</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="socket"></a>
   <a target="code" href="///C:/python/python37/lib/socket.py" type="text/plain"><tt>socket</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -24534,6 +25747,7 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
@@ -24541,6 +25755,7 @@ imported by:
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#setuptools.package_index">setuptools.package_index</a>
  &#8226;   <a href="#setuptools.ssl_support">setuptools.ssl_support</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
@@ -24570,6 +25785,7 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
 
   </div>
 
@@ -24659,6 +25875,7 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#setuptools.ssl_support">setuptools.ssl_support</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -24683,7 +25900,9 @@ imported by:
  &#8226;   <a href="#distutils.dep_util">distutils.dep_util</a>
  &#8226;   <a href="#distutils.file_util">distutils.file_util</a>
  &#8226;   <a href="#genericpath">genericpath</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#netrc">netrc</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
@@ -24792,6 +26011,8 @@ imported by:
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#imagecodecs.imagecodecs">imagecodecs.imagecodecs</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
@@ -24809,6 +26030,7 @@ imported by:
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#setuptools._vendor.six">setuptools._vendor.six</a>
  &#8226;   <a href="#setuptools.command.easy_install">setuptools.command.easy_install</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#tifffile.tifffile">tifffile.tifffile</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -24849,6 +26071,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#PyInstaller.utils.hooks.gi">PyInstaller.utils.hooks.gi</a>
  &#8226;   <a href="#PyInstaller.utils.hooks.qt">PyInstaller.utils.hooks.qt</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.util">ctypes.util</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
@@ -24995,6 +26218,7 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#multiprocessing">multiprocessing</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
@@ -25014,6 +26238,19 @@ imported by:
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#netbios">netbios</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.importer">nose.importer</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy.__config__">numpy.__config__</a>
@@ -25137,6 +26374,8 @@ imported by:
  &#8226;   <a href="#setuptools.unicode_utils">setuptools.unicode_utils</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
+ &#8226;   <a href="#six">six</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
@@ -25291,6 +26530,7 @@ imported by:
  &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
  &#8226;   <a href="#numpy.distutils.ccompiler">numpy.distutils.ccompiler</a>
  &#8226;   <a href="#numpy.distutils.misc_util">numpy.distutils.misc_util</a>
  &#8226;   <a href="#numpy.distutils.system_info">numpy.distutils.system_info</a>
@@ -25341,6 +26581,8 @@ imported by:
     <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
  &#8226;   <a href="#numpy.distutils.command.egg_info">numpy.distutils.command.egg_info</a>
  &#8226;   <a href="#numpy.ma.core">numpy.ma.core</a>
  &#8226;   <a href="#optparse">optparse</a>
@@ -25396,6 +26638,8 @@ imported by:
  &#8226;   <a href="#dummy_threading">dummy_threading</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
  &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
@@ -25551,21 +26795,26 @@ imported by:
  &#8226;   <a href="#_dummy_thread">_dummy_thread</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#concurrent.futures._base">concurrent.futures._base</a>
+ &#8226;   <a href="#conservator_upload">conservator_upload</a>
  &#8226;   <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#email._parseaddr">email._parseaddr</a>
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#gc">gc</a>
+ &#8226;   <a href="#graphql_operations">graphql_operations</a>
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.tools.nontrivial">nose.tools.nontrivial</a>
  &#8226;   <a href="#numpy.distutils.ccompiler">numpy.distutils.ccompiler</a>
  &#8226;   <a href="#numpy.f2py.rules">numpy.f2py.rules</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
@@ -25800,11 +27049,15 @@ imported by:
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#logging.config">logging.config</a>
  &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
  &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
  &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
  &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#pkg_resources._vendor.pyparsing">pkg_resources._vendor.pyparsing</a>
@@ -25891,6 +27144,9 @@ imported by:
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.pyversion">nose.pyversion</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.compat._inspect">numpy.compat._inspect</a>
  &#8226;   <a href="#numpy.core.fromnumeric">numpy.core.fromnumeric</a>
  &#8226;   <a href="#numpy.core.numerictypes">numpy.core.numerictypes</a>
@@ -25913,6 +27169,7 @@ imported by:
  &#8226;   <a href="#setuptools._vendor.six">setuptools._vendor.six</a>
  &#8226;   <a href="#setuptools.command.bdist_egg">setuptools.command.bdist_egg</a>
  &#8226;   <a href="#setuptools.monkey">setuptools.monkey</a>
+ &#8226;   <a href="#six">six</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
  &#8226;   <a href="#typing">typing</a>
  &#8226;   <a href="#unittest.loader">unittest.loader</a>
@@ -25998,6 +27255,17 @@ imports:
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
  &#8226;   <a href="#doctest">doctest</a>
+ &#8226;   <a href="#nose.case">nose.case</a>
+ &#8226;   <a href="#nose.core">nose.core</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.failure">nose.failure</a>
+ &#8226;   <a href="#nose.loader">nose.loader</a>
+ &#8226;   <a href="#nose.plugins.doctests">nose.plugins.doctests</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
+ &#8226;   <a href="#nose.selector">nose.selector</a>
+ &#8226;   <a href="#nose.suite">nose.suite</a>
+ &#8226;   <a href="#nose.tools.trivial">nose.tools.trivial</a>
+ &#8226;   <a href="#nose.util">nose.util</a>
  &#8226;   <a href="#numpy.testing">numpy.testing</a>
  &#8226;   <a href="#numpy.testing._private.parameterized">numpy.testing._private.parameterized</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
@@ -26038,6 +27306,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
  &#8226;   <a href="#unittest">unittest</a>
  &#8226;   <a href="#unittest.loader">unittest.loader</a>
@@ -26139,6 +27408,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
  &#8226;   <a href="#unittest">unittest</a>
  &#8226;   <a href="#unittest.main">unittest.main</a>
 
@@ -26213,6 +27483,18 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="unittest2"></a>
+  <a target="code" href="" type="text/plain"><tt>unittest2</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#nose.plugins.skip">nose.plugins.skip</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="urllib"></a>
   <a target="code" href="///C:/python/python37/lib/urllib/__init__.py" type="text/plain"><tt>urllib</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
@@ -26246,6 +27528,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#graphql_operations">graphql_operations</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
@@ -26273,6 +27556,7 @@ imported by:
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#nturl2path">nturl2path</a>
  &#8226;   <a href="#numpy.lib._datasource">numpy.lib._datasource</a>
@@ -26514,6 +27798,12 @@ imported by:
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
  &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
+ &#8226;   <a href="#nose.config">nose.config</a>
+ &#8226;   <a href="#nose.ext.dtcompat">nose.ext.dtcompat</a>
+ &#8226;   <a href="#nose.plugins.base">nose.plugins.base</a>
+ &#8226;   <a href="#nose.plugins.manager">nose.plugins.manager</a>
+ &#8226;   <a href="#nose.plugins.plugintest">nose.plugins.plugintest</a>
+ &#8226;   <a href="#nose.result">nose.result</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#numpy._import_tools">numpy._import_tools</a>
  &#8226;   <a href="#numpy.core._methods">numpy.core._methods</a>
@@ -26578,6 +27868,7 @@ imported by:
  &#8226;   <a href="#setuptools.glibc">setuptools.glibc</a>
  &#8226;   <a href="#setuptools.package_index">setuptools.package_index</a>
  &#8226;   <a href="#setuptools.pep425tags">setuptools.pep425tags</a>
+ &#8226;   <a href="#smtplib">smtplib</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -26681,6 +27972,7 @@ imported by:
  &#8226;   <a href="#win32com.server.dispatcher">win32com.server.dispatcher</a>
  &#8226;   <a href="#win32com.server.policy">win32com.server.policy</a>
  &#8226;   <a href="#win32com.util">win32com.util</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
  &#8226;   <a href="#win32traceutil">win32traceutil</a>
 
   </div>
@@ -27184,6 +28476,7 @@ imported by:
  &#8226;   <a href="#win32com.client.selecttlb">win32com.client.selecttlb</a>
  &#8226;   <a href="#win32com.server.policy">win32com.server.policy</a>
  &#8226;   <a href="#win32com.util">win32com.util</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
 
   </div>
 
@@ -27451,6 +28744,38 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="win32evtlog"></a>
+  <tt>win32evtlog</tt> <span class="moduletype"><tt>c:\python\python37\lib\site-packages\win32\win32evtlog.pyd</tt></span>  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="win32evtlogutil"></a>
+  <a target="code" href="///C:/python/python37/lib/site-packages/win32/lib/win32evtlogutil.py" type="text/plain"><tt>win32evtlogutil</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#win32api">win32api</a>
+ &#8226;   <a href="#win32con">win32con</a>
+ &#8226;   <a href="#win32evtlog">win32evtlog</a>
+ &#8226;   <a href="#winerror">winerror</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#logging.handlers">logging.handlers</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="win32pdh"></a>
   <tt>win32pdh</tt> <span class="moduletype"><tt>c:\python\python37\lib\site-packages\win32\win32pdh.pyd</tt></span>  <div class="import">
 imported by:
@@ -27534,11 +28859,13 @@ imported by:
   <a target="code" href="///C:/python/python37/lib/site-packages/win32/lib/winerror.py" type="text/plain"><tt>winerror</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imported by:
-    <a href="#win32com.client">win32com.client</a>
+    <a href="#data_curation_1.2.py">data_curation_1.2.py</a>
+ &#8226;   <a href="#win32com.client">win32com.client</a>
  &#8226;   <a href="#win32com.client.build">win32com.client.build</a>
  &#8226;   <a href="#win32com.client.dynamic">win32com.client.dynamic</a>
  &#8226;   <a href="#win32com.server.policy">win32com.server.policy</a>
  &#8226;   <a href="#win32com.server.util">win32com.server.util</a>
+ &#8226;   <a href="#win32evtlogutil">win32evtlogutil</a>
 
   </div>
 

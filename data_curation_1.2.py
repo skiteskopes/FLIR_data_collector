@@ -37,6 +37,9 @@ import tifffile
 global label1
 import shutil
 import piexif
+import subprocess
+import conservator_upload
+import time
 class FLIR_DATA_COLLECTOR(Frame):
     def __init__(self,master):
         self.master = master
@@ -61,6 +64,13 @@ class FLIR_DATA_COLLECTOR(Frame):
     def box_download_function(self):
         root.withdraw()
         window = Tk()
+        w = 850 # width for the Tk root
+        h = 175 # height for the Tk root
+        ws = window.winfo_screenwidth() # width of the screen
+        hs = window.winfo_screenheight() # height of the screen
+        xx = (ws/2) - (w/2)
+        yy = (hs/2) - (h/2)
+        window.geometry('%dx%d+%d+%d' % (w, h,xx,yy))
         frame_cropper = BOX_DOWNLOAD(window)
         window.mainloop()
     def image_viewer_function(self):
@@ -90,8 +100,10 @@ class IMAGE_VIEWER(Frame):
         master.title("FLIR IMAGE VIEWER")
         master.geometry("850x175")
         master.iconbitmap("flam.ico")
-        self.button = Button(master, text = "Start", bg = 'navy blue', fg = 'white',
-        command = self.open_images).grid(row = 7, column = 1)
+        self.button = Button(master, text = "View Images in Directory", bg = 'navy blue', fg = 'white',
+        command = self.open_images).grid(row = 9, column = 1)
+        self.upload_button =  Button(master, text = "Upload Images in Directory", bg = 'navy blue', fg = 'white',
+        command = self.upload_images).grid(row = 9, column = 2)
         master.resizable(width=False, height=False)
         self.radioselection = IntVar()
         self.R4 = Radiobutton(master, text="Dual PRO 13mm 640, 32 deg HFOV", variable=self.radioselection, value=1, command=self.thirteen)
@@ -131,9 +143,91 @@ class IMAGE_VIEWER(Frame):
             gc.disable()
             window2 = Toplevel()
             open_images = OPEN_IMAGES(window2,scale_percent,self.filename1,self.label1)
+    def upload_images(self):
+        if self.filename1 == "NULL":
+            self.label1.config(text = 'No Directory Selected',fg='red')
+        else:
+            gc.disable()
+            window2 = Toplevel()
+            open_images = UPLOAD_IMAGES(window2,self.filename1,self.label1)
     def select_rgb(self):
         self.filename1 = filedialog.askdirectory()
         self.label1.config(text = self.filename1,fg='green')
+class UPLOAD_IMAGES(Frame):
+        def __init__(self,master,filename1,label1):
+            self.filename1 = filename1
+            self.master = master
+            master.title("CONSERVATOR UPLOAD")
+            master.iconbitmap('flam.ico')
+            self.ws = master.winfo_screenwidth() # width of the screen
+            self.hs = master.winfo_screenheight() # height of the screen
+            self.wid = (self.ws/2) - (850/2)
+            self.hei = (self.hs/2) - (175/2)
+            master.geometry('%dx%d+%d+%d' % (850, 175,self.wid,self.hei))
+            self.frame2 = Frame(master)
+            self.frame2.grid(column=1,row=1,ipadx = 185)
+            self.frame2['borderwidth'] = 2
+            self.frame2['relief'] = 'sunken'
+            self.label = Label(self.frame2, text = 'Project Name: ',fg='black')
+            self.label.pack(side=LEFT)
+            self.entry_box1 = Entry(self.frame2)
+            self.entry_box1.pack(side=LEFT)
+            self.recvar = IntVar()
+            self.exvar = IntVar()
+            self.checkbutton = Checkbutton(self.frame2, text = "Keep File Structure",variable = self.recvar, onvalue=1,offvalue=0,command = self.recursive_check)
+            self.checkbutton.pack(side=LEFT)
+            self.checkbutton2 = Checkbutton(self.frame2, text = "Skip Existing Files",variable = self.exvar, onvalue=1,offvalue=0,command = self.exist_check)
+            self.checkbutton2.pack(side=LEFT)
+            self.scrollbar = Scrollbar(master)
+            self.scrollbar.grid(row=2, column=2, sticky=(N,S,E))
+            self.log_window = Text(master, state='normal', width=100, height=7.4,yscrollcommand=self.scrollbar.set)
+            self.log_window.grid(row=2,column=1)
+            self.scrollbar.config(command=self.log_window.yview)
+            self.upbutton = Button(master, text = "Upload", bg = 'navy blue', fg = 'white',
+            command = self.upload).grid(row=3,column=1)
+            self.rec = ""
+            self.ex = ""
+            def destroyer():
+                master.quit()
+                master.destroy()
+                sys.exit()
+            master.protocol("WM_DELETE_WINDOW",destroyer)
+        def upload(self):
+            project_name = self.entry_box1.get()
+            self.update("UPLOADING DIRECTORY ")
+            if self.rec == "":
+                self.update("NOT KEEPING FILE STRUCTURE...")
+            else:
+                self.update("KEEPING FILE STRUCTURE...")
+            if self.ex == "":
+                self.update("NOT SKIPPING FILES ...")
+            else:
+                self.update("SKIPPING FILES ALREADY IN CONSERVATOR...")
+            self.update("python conservator_upload.py "+self.ex+" "+self.rec+" "+'"'+project_name+'"'+" "+self.filename1)
+            process = self.popen("python -u conservator_upload.py "+self.ex+" "+self.rec+" "+'"'+project_name+'"'+" "+self.filename1)
+            process = process.decode('utf-8')
+            for line in process.splitlines():
+                self.update(line)
+
+            #self.log_window.insert(END,stdout+'\n')
+            self.log_window.see(END)
+        def recursive_check(self):
+            if self.recvar.get() ==1:
+                self.rec = "--recursive"
+            else:
+                self.rec = ""
+        def exist_check(self):
+            if self.exvar.get() ==1:
+                self.ex= "--resume"
+            else:
+                self.ex = ""
+        def update(self,string):
+            self.log_window.insert(END,string+'\n')
+        def popen(self,cmd):
+            startupinfo = subprocess.STARTUPINFO()
+            startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+            process = subprocess.Popen(cmd, startupinfo=startupinfo, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+            return process.stdout.read()
 class OPEN_IMAGES(Frame):
     def __init__(self,master,scale_percent,filename1,label1):
         self.master = master
@@ -268,7 +362,7 @@ class OPEN_IMAGES(Frame):
             print(exif_dict)
             try:
                 current = exif_dict['0th'][11]
-                current = (current.decode('utf-8'))
+                current = (current.decode('utf-8',errors='replace'))
                 exist = True
             except:
                 exist = False
@@ -404,6 +498,10 @@ class BOX_DOWNLOAD(Frame):
     def __init__(self,master):
         self.master = master
         master.title("FLIR BOX DOWNLOAD")
+        master.iconbitmap('flam.ico')
+        master.geometry("850x175")
+        self.download_button
+
 if __name__ == '__main__':
         root = Tk()
         my_gui = FLIR_DATA_COLLECTOR(root)
