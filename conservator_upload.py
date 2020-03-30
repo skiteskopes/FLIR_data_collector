@@ -255,6 +255,7 @@ class ConservatorUploader(ConservatorOperations):
         """
         self.logger.info("Uploading '%s' to collection id '%s'",
                          dir_entry.path, collection_id)
+        print("INFO:Uploading "+dir_entry.path+' to collection id '+collection_id)
         # Check whether the file already exists, and if so, get its current
         # state.
         file_type = "image"
@@ -273,10 +274,13 @@ class ConservatorUploader(ConservatorOperations):
         if file_state is not None and file_state == "uploading":
             # The video upload was not completed, and needs to be replaced.
             self.logger.warning("Removing imcomplete upload for file '%s'", dir_entry.path)
+            print("WARNING:Removing imcomplete upload for file "+dir_entry.path)
             remove_ok = self.remove_video(file_info['id'])
             if not remove_ok:
                 self.logger.warning("Unable to remove incomplete video '%s'",
                                     file_info['filename'])
+                print("WARNING:Unable to remove incomplete video "+file_info['filename'])
+
                 return
             file_state = None
         if file_state is None:
@@ -291,11 +295,13 @@ class ConservatorUploader(ConservatorOperations):
             # If "failed" or "retrying", give up.
             self.logger.warning("Skipping video '%s' in state '%s",
                              dir_entry.path, file_state)
+            print("WARNING:Skipping video "+dir_entry.path+" in state "+file_state)
             self.bad_count += 1
             return
         elif file_state == "completed":
             # Video already uploaded.
             self.logger.warning("Skipping already-uploaded file '%s'", dir_entry.path)
+            print("WARNING:Skipping already-uploaded file "+dir_entry.path)
             self.skip_count += 1
             return
 
@@ -308,10 +314,12 @@ class ConservatorUploader(ConservatorOperations):
             if not url:
                 self.logger.warning("Failed to request signed video upload URL for '%s'",
                                     dir_entry.name)
+                print("WARNING:Failed to request signed video upload URL for "+dir_entry.name)
                 remove_ok = self.remove_video(file_info['id'])
                 if remove_ok is False:
                     self.logger.warning("Failed to remove not-yet-uploaded file '%s'!",
                                      dir_entry.name)
+                    print("WARNING:Failed to remove not-yet-uploaded file "+dir_entry.name+"!")
                 return
             # NOTE: Can't use requests to upload large files, see
             #       'https://gitlab.com/gitlab-com/support-forum/issues/4723'
@@ -322,14 +330,17 @@ class ConservatorUploader(ConservatorOperations):
             if curl_status.returncode != 0:
                 self.logger.warning("%s returned non-zero exit code (%d): %s", curl_status.args,
                                  curl_status.returncode, curl_status.stderr)
+                print("WARNING:"+curl_status.args+" returned non-zero exit code ("+curl_status.returncode+"):"+curl_status.stderr)
                 return
             else:
                 # Check the output for server-side errors.
                 if "<ERROR>" in curl_status.stdout:
                     self.logger.warning("Server reported upload error: %s", curl_status.stdout)
+                    print("WARNING:Server reported upload error:"+curl_status.stdout)
                     return
                 else:
                     self.logger.debug("Server reply to file upload: %s", curl_status.stdout)
+                    print("DEBUG:Server reply to file upload:"+curl_status.stdout)
 
         # Process the video and update video status.
         self.process_video(file_info['id'])
@@ -340,8 +351,10 @@ class ConservatorUploader(ConservatorOperations):
         file_state = file_info['state']
         if file_state == "processing":
             self.logger.debug("Currently processing file: %s", file_info['filename'])
+            print("DEBUG:Currently processing file:"+file_info['filename'])
         else:
             self.logger.debug("Video '%s' state: %s", file_info['filename'], file_state)
+            print("DEBUG:Video "+file_info['filename']+" state:"+file_state)
         self.uploads_in_progress.append({"filename": dir_entry.path,
                                          "id": file_info['id'],
                                          "type": file_type,
@@ -356,6 +369,7 @@ class ConservatorUploader(ConservatorOperations):
         subdir_list = []
         self.logger.info("Uploading files in '%s' to collection id '%s'",
                          local_dir, collection_id)
+        print("INFO:Uploading files in "+local_dir+" to collection id "+collection_id)
         for folder_item in os.scandir(local_dir):
             if folder_item.is_dir() and self.recursive:
                 # Upload all files in this folder first.  Record subfolders to
@@ -381,6 +395,7 @@ class ConservatorUploader(ConservatorOperations):
 
     def check_for_processing_complete(self, max_timeout=60):
         self.logger.info("Checking upload processing status..")
+        print("INFO:Checking upload processing status..")
         empty_list = True
         for idx, a_file_info in enumerate(self.uploads_in_progress):
             if "status" in a_file_info:
